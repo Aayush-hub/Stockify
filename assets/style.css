@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+</style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Roboto", sans-serif;
+    
+  }
+  
+  body {
+    overflow-x: hidden;
+    background-image: url(1.png);
+    background-repeat: no-repeat;
+    background-size: 1600px 1500px;
+  }
+  .container {
+    display: flex;
+    margin-top: 2rem;
+    
+  }
+  
+  #headingMain{
+    display: block;
+    font-size: 3em;
+    text-align: left;
+    margin-left:30px;
+    font-weight: bold;
+  }
+
+  /* input your code */
+  #secondHead{
+    display: block;
+    margin-top: -30px;
+    font-size: 1.5em;
+    text-align: left;
+    margin-left:-50px;
+    font-weight: 200;
+  }
+
+  .date{
+      margin-left:-30px;
+      /* border-radius:10px; */
+      border: 1px solid #47cf73;
+      /* overflow: hidden; */
+  }
+
+  .nav {
+    /*position: fixed;*/
+    width: 30vw;
+    /* height: 100%; */
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #083868;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .content {
+    width: 65vw;
+    padding: 1rem 4rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+  
+  /* welcome to stociky */
+  .start {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+  
+  
+  .input-place p {
+    color: antiquewhite;
+    font-size: larger;
+    padding: 2px;
+  }
+
+  .firstInput{
+    margin-left:-50px;
+    padding: 6px;
+    border-radius:20px ;
+    border-color: transparent;
+    border: 1px solid #47cf73;
+  }
+  .form {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    height: 1.5rem;
+  }
+
+  /* submit button */
+  .form button {
+    background-color: #654a82;
+    padding: 1px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 200;
+    height: 25px;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: .3s;
+    width: 80px;
+    margin-left: 20px;
+  }
+
+  .form button:focus{
+    outline: none;
+  } 
+
+  .form button{
+    border: 2px solid #47cf73;
+ }
+
+ 
+  .form button:hover {
+  background-color: #35513e;
+}
+
+  /* global button style */
+  .buttons {
+    margin: 2rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+    
+  }
+
+  /* indicator button */
+  #indicators{
+    background-color: #654a82;
+    border: 0;
+    padding: 40px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 200;
+    height: 40px;
+    overflow: hidden;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: .3s;
+    width: 100px;
+    margin-bottom: 30px;
+  }
+  #indicators:focus{
+    outline: none;
+  }
+
+  #indicators {
+    border: 2px solid #47cf73;
+ }
+ 
+  #indicators:hover {
+   background-color: #35513e;
+ }
+
+ /* stock button */
+  #stock{
+    background-color: #654a82;
+    border: 0;
+    padding: 20px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    height: 40px;
+    overflow: hidden;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: .3s;
+    width: 100px;
+    margin-right:30px
+  }
+
+  #stock:focus{
+    outline: none;
+  }
+
+  #stock{
+    border: 2px solid #47cf73;
+  }
+
+  #stock:hover {
+    background-color: #35513e;
+  }
+
+
+  /* //forecast button */
+
+  #forecast {
+    background-color: #654a82;
+    border: 0;
+    padding: 20px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 400;
+    height: 40px;
+    overflow: hidden;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: .3s;
+    width: 100px;
+    margin-right: 25px;
+  }
+
+  
+  #forecast:focus{
+    outline: none;
+  }
+
+  #forecast{
+    border: 2px solid #47cf73;
+  }
+
+  #forecast:hover {
+    background-color: #35513e;
+  }
+
+  #n_days{
+    width: 150px;
+    border-color: transparent;
+    border: 1px solid #47cf73;;
+    font-size: 15px;
+    background: white;
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 35px;
+    border-radius: 4px;
+  }
+  
+  #n_days:focus{
+    outline: none;
+  }
+  
+  #n_days::-webkit-input-placeholder {
+      font-size: 15px;
+      padding: 6px;
+      color:darkgray ;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .header p {
+    font-size: 4rem;
+    margin-left: 3rem;
+    line-height: 80%;
+  }
+  
+  #logo {
+    max-width: 15rem;
+    height: auto;
+  }
